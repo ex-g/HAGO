@@ -1,0 +1,55 @@
+/* 유저 섹션 */
+#sec_user {
+  position: relative;
+  width: 70%;
+  height: 450px;
+  background-color: #F5FBFB;
+  top: 100px;
+  left: 100px;
+  border-radius: 20px;
+  opacity: 0.8;
+  box-shadow: 18px 18px 40px rgb(32, 32, 42, 0.36); 
+}
+
+/* 제목 섹션 */
+#sec_name {
+  position: relative;
+  width: 70%;
+  height: 120px;
+  left: 100px;
+  top: 110px;
+  background-color: #F5FBFB;
+  border-radius: 20px;
+  opacity: 0.8;
+  box-shadow: 18px 18px 40px rgb(32, 32, 42, 0.36);
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 25px;
+  background-color: #F5FBFB;
+}
+
+#name_desc {
+  position: absolute;
+  top: 55px;
+  left: 22px;
+  font-size: 15px;
+  line-height: 25px;
+  background-color: #F5FBFB;
+}
+
+/* 설명 섹션 */
+#sec_desc {
+  position: relative;
+  width: 70%;
+  height: 700px;
+  left: 100px;
+  top: 120px;
+  background-color: #F5FBFB;
+  border-radius: 20px;
+  opacity: 0.8;
+  box-shadow: 18px 18px 40px rgb(32, 32, 42, 0.36);
+}

@@ -1,0 +1,684 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ----------------------- */
+/* Home.css  */
+/* ----------------------- */
+body {
+    height: 900px;
+}
+
+#sec_user {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    width: 33.3%;
+    height: 185px;
+    background-color: #F5FBFB;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px
+}
+
+#sec_user > a {
+    color: black;
+}
+
+#sec_user > a:hover {
+    color: #507882;
+}
+
+#content1 {
+    border-top-left-radius: 20px;
+}
+
+#content2 {
+    left: 33.3%;
+    background-color: #EDD7C8;
+}
+
+#content2 > i {
+    background-color: #EDD7C8;
+}
+
+#content3 {
+    left: 66.6%;
+    border-top-right-radius: 20px;
+    border: 0.01px solid #E1EFF0
+}
+
+#content4 {
+    top: 50%;
+    border-bottom-left-radius: 20px;
+    background-color: #EDD7C8;
+}
+
+#content4 > i {
+    background-color: #EDD7C8;
+}
+
+#content5 {
+    top: 50%;
+    left: 33.3%;
+
+}
+
+#content6 {
+    top: 50%;
+    left: 66.6%;
+    height: 183px;
+    border-bottom-right-radius: 20px;
+    border: 0.01px solid #EDD7C8;
+    background-color: #EDD7C8;
+}
+
+#content6 > i {
+    background-color: #EDD7C8;
+}
+
+i {
+    font-size: 80px;
+    padding-bottom: 20px;
+    background-color: #F5FBFB;
+}
+
+/* 설명란 */
+#sec_desc {
+    background-color: #E1EFF0;
+    position: relative;
+    width: 70%;
+    height: 50px;
+    left: 100px;
+    top: 170px;
+    border-radius: 20px;
+    opacity: 1;
+    box-shadow: none;
+}
+
+/* ----------------------- */
+/* Agecalculator.css  */
+/* ----------------------- */
+
+/* 입력란 */
+#a_input {
+    position:relative;
+    background-color: #F5FBFB;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#a_input > input {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    background-color: white;
+}
+
+#a_input > #a_birth {
+    margin-right: 60px;
+}
+
+#a_btn_today {
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    border: 0.01px solid gray;
+    border-radius: 3px;
+    padding-bottom: 4px;
+    background-color: white;
+}
+
+#a_btn_today:hover {
+    cursor: pointer;
+    background-color: #E1EFF0;
+    transition: 0.4s;
+}
+
+#a_btn_cal, #a_btn_reset {
+    height: 30px;
+    width: 70px;
+    margin: 5px;
+    background: white;
+    border: 1px solid gray;
+    font-size: 15px;
+}
+
+#a_btn_cal:hover, #a_btn_reset:hover {
+    cursor: pointer;
+    background-color: #D9E2DE ;
+    transition: 0.4s;
+}
+
+#a_btn_reset:hover {
+    background-color: #F0E9DF;
+}
+
+/* 출력란 */
+#a_output {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#a_result {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #E1EFF0;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;   
+    color: black;
+}
+
+#zodiac_kor {
+    background-color: #D9E2DE;
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    left: 0;
+    top: 50px;
+}
+
+
+#zodiac_eng {
+    background-color: #F0E9DF;
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    right: 0;
+    top: 50px;
+}
+
+#img_container {
+    position: absolute;
+    width: 50%;
+    height: 83%;
+    top: 100px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid lightgray;
+    background-color: #F5FBFB;
+}
+
+#zodiac_kor_img {
+    position: absolute;
+    left:35%;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #F5FBFB;
+}
+
+#img_container2 {
+    position: absolute;
+    width: 50%;
+    height: 83%;
+    border-bottom-right-radius: 20px;
+    top: 100px;
+    right: 0px;
+    border-left: 1px solid lightgray;
+    background-color: #F5FBFB;
+}
+
+#zodiac_eng_img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 35%;
+    top: 10px;
+    background-color: #F5FBFB;
+}
+
+/* ----------------------- */
+/* Bmi.css  */
+/* ----------------------- */
+
+/* 입력값 */
+#b_input {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #F5FBFB;
+}
+
+#height_weight{
+    padding-top: 50px;
+    background-color: #F5FBFB;
+    border-top-left-radius: 20px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
+}
+
+#b_calculation, #b_reset {
+    width: 200px;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 7px 3px rgb(192, 192, 192, 0.36);
+    font-size: 20px;
+}
+
+#b_calculation:hover, #b_reset:hover {
+    background-color: white;
+}
+
+#b_calculation:hover {
+    background-color: #E1EFF0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#b_reset:hover {
+    background-color: #F0E9DF;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* 출력값 */
+#b_output {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 50%;
+    bottom: 100%;
+    font-size: 25px;
+    background-color: #E1EFF0;
+}
+
+#result_bmi {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    line-height: 100px;
+    background-color: #E1EFF0;
+}
+
+span {
+    background-color: #E1EFF0;
+}
+
+#bmi_ul {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+#color {
+    position: relative;
+    width: 30%;
+    height: 80%;
+    left: 60%;
+    top: 10%;
+    background-color: #E1EFF0;
+    border: 2px solid black;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#stick {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.4;
+    border-top: 2px solid red;
+}
+
+#num1, #num2, #num3 {
+    position: absolute;
+    left: 53%;
+    z-index: 1;
+    background-color: #E1EFF0;
+    text-align: right;
+}
+
+#num1 {
+    top: 320px;
+}
+
+#num2 {
+    top: 180px;
+}
+
+#num3 {
+    top: 130px;
+}
+
+#color_box4 {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #EDD7C8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    line-height: 94px;
+}
+
+#color_box3 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 210px;
+    background-color: #F0E9DF ;
+    line-height: 60px;
+}
+
+#color_box2 {
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    bottom: 75px;
+    background-color: #D9E2DE ;
+    line-height: 135px;
+}
+
+#color_box1 {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    bottom: 0px;
+    background-color: #F5FBFB;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 75px;
+}
+
+
+/* ----------------------- */
+/* Discount.css  */
+/* ----------------------- */
+/* 입력값 */
+#d_input {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #F5FBFB;
+}
+
+#cost_discount{
+    padding-top: 50px;
+    background-color: #F5FBFB;
+    border-top-left-radius: 20px;
+    padding-bottom: 30px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
+}
+
+#d_calculation, #d_reset {
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 7px 3px rgb(192, 192, 192, 0.36);
+    font-size: 20px;
+    background-color: white;
+}
+
+#d_calculation:hover, #d_reset:hover {
+    background-color: #E1EFF0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* 출력값 */
+#d_output {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 50%;
+    bottom: 100%;
+    font-size: 25px;
+    background-color: #E1EFF0 ;
+}
+
+#spans {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    line-height: 100px;
+    background-color: #E1EFF0;
+}
+
+span {
+    background-color: #E1EFF0;
+}
+
+/* ----------------------- */
+/* Lifespan.css  */
+/* ----------------------- */
+
+/* 입력값 */
+#input {
+    position:relative;
+    background-color: #F5FBFB;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#input > input {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    background-color: white;
+}
+
+#calculation, #reset {
+    height: 30px;
+    width: 70px;
+    margin: 5px;
+    background: white;
+    border: 1px solid gray;
+    font-size: 15px;
+}
+
+#calculation:hover, #reset:hover {
+    cursor: pointer;
+    background-color: #E1EFF0;
+    transition: 0.4s;
+}
+
+
+/* 출력값 */
+#output {
+    position: relative;
+    width: 100%;
+    height: 63%;
+    text-align: center;
+    line-height: 55px;
+    background-color: #F5FBFB;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#graph {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    background-color: #E1EFF0;
+    z-index: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#graph_res {
+    position: absolute;
+    background-color: lightcoral;
+    width: 0%;
+    height: 50px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#result, #total_day, #past_day, #future_day, b {
+    background-color: #F5FBFB;
+}
+
+.dp {
+    background-color: orange;
+}
+
+/* ----------------------- */
+/* Vat.css  */
+/* ----------------------- */
+
+button {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 7px 3px rgb(192, 192, 192, 0.36);
+    font-size: 20px;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #F0E9DF;
+    transition: 0.4s;
+}
+
+input {
+    width: 260px;
+    height: 20px;
+    font-size: 20px;
+    text-align: right;
+    background-color: white;
+}
+
+/* 입력값 */
+#total {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    line-height: 70px;
+    font-size: 20px;
+    background-color: #F5FBFB;
+    text-align: center;
+}
+
+#explain1 {
+    border-top-left-radius: 20px;
+    background-color: #F5FBFB;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* 출력값 */
+#supply {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 25px;
+    left: 50%;
+    bottom: 100%;
+    line-height: 70px;
+    font-size: 20px;
+    background-color: #E1EFF0;
+    text-align: center;
+}
+
+#explain2 {
+    border-top-right-radius: 20px;
+    background-color: #E1EFF0;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* ----------------------- */
+/* Wordcounter.css  */
+/* ----------------------- */
+
+/* 유저 섹션 */
+textarea { 
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    top: 40px;
+    left: 40px;
+    resize: none;
+    border: 2px solid #507882;
+    outline-color: #EDD7C8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+#word_ul {
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    top: 50px;
+    right: 40px;
+    list-style-type: none;
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #F5FBFB;
+}
+
+#word_ul > span {
+    background-color: #F5FBFB;
+}
