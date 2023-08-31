@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Wordcounter, Vat, Lifespan, Discount, Bmi, Agecalculator, Home } from "./Page"
 import $ from 'jquery';
+import DisplayAds from './DisplayAds';
 
 
 export default function App() {
@@ -58,6 +59,8 @@ export default function App() {
         <li id="link6"><Link to="/vat">부가세 계산기</Link></li>
       </div>
     
+      <DisplayAds/>
+
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/wordcounter" element={<Wordcounter/>}/>
@@ -67,6 +70,7 @@ export default function App() {
       <Route path="/lifespan" element={<Lifespan/>}/>
       <Route path="/vat" element={<Vat/>}/>
     </Routes>
+    <div id="sec_desc"></div>
     </BrowserRouter>
   );
 }

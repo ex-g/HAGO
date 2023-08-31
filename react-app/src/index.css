@@ -59,7 +59,7 @@ footer {
 
 @media screen and (min-device-width: 1024px) {
   body {
-    height: 900px;
+    height: 1500px;
   }
   #bar {
     display: none;

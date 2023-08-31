@@ -46,13 +46,11 @@
     #sec_desc {
       position: relative;
       width: 70%;
-      height: 700px;
+      height: 100px;
       left: 100px;
-      top: 120px;
-      background-color: #F5FBFB;
+      top: 500px;
+      background-color: #E1EFF0;
       border-radius: 20px;
-      opacity: 0.8;
-      box-shadow: 18px 18px 40px rgb(32, 32, 42, 0.36);
     }
 }
 
