@@ -100,4 +100,15 @@
     line-height: 25px;
     background-color: #F5FBFB;
   }
+
+    /* 설명 섹션 */
+    #sec_desc {
+      position: relative;
+      width: 70%;
+      height: 100px;
+      left: 100px;
+      top: 500px;
+      background-color: #E1EFF0;
+      border-radius: 20px;
+    }
 }
