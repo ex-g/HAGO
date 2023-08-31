@@ -114,23 +114,24 @@ footer {
       position: absolute;
       left: 2%;
       top: 80px;
+      z-index: 1;
     }
+
     #bar:hover {
       color: #F5FBFB;
       transition: 0.4s;
+      background-color: #507882;
     }
     /* 메뉴 */
     #menu {
-      width: 60%;
-      height: 100%;
-      display: inline;
       opacity: 0.8;
-      box-shadow: 18px 18px 40px rgb(32, 32, 42, 0.36);
       list-style-type: none;
       text-align: center;
       line-height: 50px;
       font-size: 20px;
-      z-index: 1;
+      width: 100%;
+      top: 1150px;
+      position: absolute;
     }
     
     li {

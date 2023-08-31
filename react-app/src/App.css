@@ -105,8 +105,9 @@
     #sec_desc {
       position: relative;
       width: 70%;
-      height: 100px;
-      left: 100px;
+      height: 10px;
+      left: 50%;
+      transform: translate(-50%);
       top: 500px;
       background-color: #E1EFF0;
       border-radius: 20px;
