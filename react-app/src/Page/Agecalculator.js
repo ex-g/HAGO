@@ -135,8 +135,8 @@ export default function Agecalculator() {
         <>
             <div id="sec_user">
                 <div id="a_input">
-                    출생일<input type="number" id="a_birth" autoComplete="off" placeholder=" 예) 19720101"/>
-                    기준일<input type="number" id="a_standard" autoComplete="off" placeholder=" 예) 20230822"/><button onClick={putToday} id="a_btn_today">오늘</button><br/>
+                    출생일 <input type="number" id="a_birth" autoComplete="off" placeholder=" 예) 19720101"/>
+                    기준일 <input type="number" id="a_standard" autoComplete="off" placeholder=" 예) 20230822"/><button onClick={putToday} id="a_btn_today">오늘</button><br/>
                     <button id="a_btn_cal" onClick={calculation}>계산</button><button id="a_btn_reset" onClick={reset}>초기화</button>
                 </div>
                 <div id="a_output">

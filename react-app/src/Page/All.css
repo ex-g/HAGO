@@ -7,22 +7,100 @@ input[type=number]::-webkit-outer-spin-button {
 /* ----------------------- */
 /* Home.css  */
 /* ----------------------- */
+
+@media screen and (min-device-width: 1024px) {
+    .content {
+        font-size: 20px;
+        width: 33.3%;
+        height: 185px;
+        padding-top: 40px
+    }
+    i {
+        font-size: 80px;
+    }
+    #content1 {
+        border-top-left-radius: 20px;
+    }
+    #content2 {
+        left: 33.3%;
+        background-color: #EDD7C8;
+    } 
+    #content3 {
+        left: 66.6%;
+        border-top-right-radius: 20px;
+        border: 0.01px solid #E1EFF0
+    }
+    #content4 {
+        top: 50%;
+        border-bottom-left-radius: 20px;
+        background-color: #EDD7C8;
+    }
+    #content4 > i {
+        background-color: #EDD7C8;
+    }
+    #content5 {
+        top: 50%;
+        left: 33.3%;
+    }
+    #content6 {
+        top: 50%;
+        left: 66.6%;
+        height: 183px;
+        border-bottom-right-radius: 20px;
+        border: 0.01px solid #EDD7C8;
+        background-color: #EDD7C8;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    .content {
+        font-size: 15px;
+        width: 50%;
+        height: 120px;
+        padding-top: 20px
+    }
+    i {
+        font-size: 50px;
+    }
+    #content1 {
+        border-top-left-radius: 20px;
+    }
+    #content2 {
+        left: 50%;
+        border-top-right-radius: 20px;
+        background-color: #EDD7C8;
+    }
+    #content3 {
+        top: 140px;
+        background-color: #EDD7C8;
+    }
+    #content3 > i {
+        background-color: #EDD7C8;
+    }
+    #content4 {
+        top: 140px;
+        left: 50%;
+    }
+    #content5 {
+        top: 280px;
+        border-bottom-left-radius: 20px;
+    }
+    #content6 {
+        top: 280px;
+        left: 50%;
+        background-color: #EDD7C8;
+        border-bottom-right-radius: 20px;
+    }
+}
+
 body {
     height: 900px;
 }
 
-#sec_user {
-    position: relative;
-}
-
 .content {
     position: absolute;
-    width: 33.3%;
-    height: 185px;
     background-color: #F5FBFB;
     text-align: center;
-    font-size: 20px;
-    padding-top: 40px
 }
 
 #sec_user > a {
@@ -33,47 +111,7 @@ body {
     color: #507882;
 }
 
-#content1 {
-    border-top-left-radius: 20px;
-}
-
-#content2 {
-    left: 33.3%;
-    background-color: #EDD7C8;
-}
-
 #content2 > i {
-    background-color: #EDD7C8;
-}
-
-#content3 {
-    left: 66.6%;
-    border-top-right-radius: 20px;
-    border: 0.01px solid #E1EFF0
-}
-
-#content4 {
-    top: 50%;
-    border-bottom-left-radius: 20px;
-    background-color: #EDD7C8;
-}
-
-#content4 > i {
-    background-color: #EDD7C8;
-}
-
-#content5 {
-    top: 50%;
-    left: 33.3%;
-
-}
-
-#content6 {
-    top: 50%;
-    left: 66.6%;
-    height: 183px;
-    border-bottom-right-radius: 20px;
-    border: 0.01px solid #EDD7C8;
     background-color: #EDD7C8;
 }
 
@@ -82,29 +120,75 @@ body {
 }
 
 i {
-    font-size: 80px;
     padding-bottom: 20px;
     background-color: #F5FBFB;
-}
-
-/* 설명란 */
-#sec_desc {
-    background-color: #E1EFF0;
-    position: relative;
-    width: 70%;
-    height: 50px;
-    left: 100px;
-    top: 170px;
-    border-radius: 20px;
-    opacity: 1;
-    box-shadow: none;
 }
 
 /* ----------------------- */
 /* Agecalculator.css  */
 /* ----------------------- */
 
+@media screen and (min-device-width: 1024px) {
+    #a_input > input {
+        width: 200px;
+        height: 30px;
+        margin: 10px;
+        margin-bottom: 25px;
+    }
+    #a_input > #a_birth {
+        margin-right: 60px;
+    }
+    #a_btn_today {
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
+    }
+    #zodiac_kor_img {
+        left:35%;
+        top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    #zodiac_eng_img {
+        width: 150px;
+        height: 150px;
+        right: 35%;
+        top: 10px;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    #a_input > input {
+        width: 80px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #a_input > #a_birth {
+        margin-right: 15px;
+    }
+    #a_btn_today {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+    }
+    #zodiac_kor_img {
+        left:50%;
+        transform: translate(-50%);
+        top: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    #zodiac_eng_img {
+        width: 100px;
+        height: 100px;
+        right: 50%;
+        transform: translate(50%);
+        top: 30px;
+    }
+}
+
 /* 입력란 */
+
 #a_input {
     position:relative;
     background-color: #F5FBFB;
@@ -116,22 +200,11 @@ i {
 }
 
 #a_input > input {
-    width: 200px;
-    height: 30px;
-    margin: 10px;
-    margin-bottom: 25px;
     font-size: 15px;
     background-color: white;
 }
 
-#a_input > #a_birth {
-    margin-right: 60px;
-}
-
 #a_btn_today {
-    width: 80px;
-    height: 35px;
-    font-size: 15px;
     border: 0.01px solid gray;
     border-radius: 3px;
     padding-bottom: 4px;
@@ -192,7 +265,6 @@ i {
     top: 50px;
 }
 
-
 #zodiac_eng {
     background-color: #F0E9DF;
     position: absolute;
@@ -214,10 +286,6 @@ i {
 
 #zodiac_kor_img {
     position: absolute;
-    left:35%;
-    top: 20px;
-    width: 150px;
-    height: 150px;
     background-color: #F5FBFB;
 }
 
@@ -234,10 +302,6 @@ i {
 
 #zodiac_eng_img {
     position: absolute;
-    width: 150px;
-    height: 150px;
-    right: 35%;
-    top: 10px;
     background-color: #F5FBFB;
 }
 
@@ -245,28 +309,124 @@ i {
 /* Bmi.css  */
 /* ----------------------- */
 
+@media screen and (min-device-width: 1024px) {
+    #b_input {
+        font-size: 40px;
+        line-height: 100px;
+        width: 50%;
+        background-color: #F5FBFB;
+    }
+    #height_weight{
+        padding-top: 50px;
+        background-color: #F5FBFB;
+        border-top-left-radius: 20px;
+    }
+    input {
+        width: 250px;
+        height: 30px;
+    }
+    #b_output {
+        width: 50%;
+        left: 50%;
+        font-size: 25px;
+    }
+    #b_calculation, #b_reset {
+        width: 200px;
+        height: 50px;
+        margin-top: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    #result_bmi {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        line-height: 100px;
+        background-color: #E1EFF0;
+    }
+    #color {
+        position: relative;
+        width: 30%;
+        height: 80%;
+        left: 60%;
+        top: 10%;
+        background-color: #E1EFF0;
+        border: 2px solid black;
+        border-radius: 23px;
+        text-align: center;
+        font-size: 18px;
+    }
+    #bmi_ul {
+        font-size: 15px;
+    }
+    #num1, #num2, #num3 {
+        left: 53%;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    #b_input {
+        width: 30%;
+        font-size: 13px;
+    }
+    #height_weight {
+        padding-top: 100px;
+    }
+    #height_weight > input {
+        width: 30px;
+        height: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #b_output {
+        width: 70%;
+        left: 30%;
+    }
+    #b_calculation, #b_reset {
+        margin-top: 20px;
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #result_bmi {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        line-height: 100px;
+        background-color: #E1EFF0;
+        font-size: 13px;
+    }
+    #color {
+        position: relative;
+        width: 20%;
+        height: 80%;
+        top: 10%;
+        left: 70%;
+        background-color: #E1EFF0;
+        border: 2px solid black;
+        border-radius: 23px;
+        text-align: center;
+        font-size: 13px;
+    }
+    #bmi_ul {
+        font-size: 10px;
+    }
+    #num1, #num2, #num3 {
+        left: 57%;
+    }
+}
+
 /* 입력값 */
 #b_input {
     position: relative;
-    width: 50%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    font-size: 40px;
     text-align: center;
-    line-height: 100px;
-    background-color: #F5FBFB;
-}
-
-#height_weight{
-    padding-top: 50px;
-    background-color: #F5FBFB;
-    border-top-left-radius: 20px;
 }
 
 input {
-    width: 250px;
-    height: 30px;
     padding-top: 10px;
     font-size: 17px;
     text-align: center;
@@ -274,15 +434,9 @@ input {
 }
 
 #b_calculation, #b_reset {
-    width: 200px;
-    height: 50px;
-    margin-top: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
     border-radius: 20px;
     opacity: 0.8;
     box-shadow: 3px 3px 7px 3px rgb(192, 192, 192, 0.36);
-    font-size: 20px;
 }
 
 #b_calculation:hover, #b_reset:hover {
@@ -304,21 +458,10 @@ input {
 /* 출력값 */
 #b_output {
     position: relative;
-    width: 50%;
     height: 100%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    left: 50%;
     bottom: 100%;
-    font-size: 25px;
-    background-color: #E1EFF0;
-}
-
-#result_bmi {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    line-height: 100px;
     background-color: #E1EFF0;
 }
 
@@ -327,21 +470,7 @@ span {
 }
 
 #bmi_ul {
-    font-size: 15px;
     list-style-type: none;
-}
-
-#color {
-    position: relative;
-    width: 30%;
-    height: 80%;
-    left: 60%;
-    top: 10%;
-    background-color: #E1EFF0;
-    border: 2px solid black;
-    border-radius: 23px;
-    text-align: center;
-    font-size: 18px;
 }
 
 #stick {
@@ -358,7 +487,6 @@ span {
 
 #num1, #num2, #num3 {
     position: absolute;
-    left: 53%;
     z-index: 1;
     background-color: #E1EFF0;
     text-align: right;
@@ -419,24 +547,78 @@ span {
 /* ----------------------- */
 /* Discount.css  */
 /* ----------------------- */
+@media screen and (min-device-width: 1024px) {
+    #d_input {
+        width: 50%;
+        height: 100%;
+        font-size: 40px;
+        line-height: 100px;
+        border-bottom-left-radius: 20px;
+    }
+    #d_calculation, #d_reset {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #d_output {
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        bottom: 100%;
+        font-size: 25px;
+    }
+    #spans {
+        line-height: 100px;
+    }
+    #cost_discount {
+        border-top-right-radius: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    #d_input {
+        width: 100%;
+        height: 210px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    #d_calculation, #d_reset {
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #d_output {
+        width: 100%;
+        height: 210px;
+        font-size: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    #spans {
+        line-height: 50px;
+    }
+    #cost_discount {
+        border-top-right-radius: 20px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+}
+
 /* 입력값 */
 #d_input {
     position: relative;
-    width: 50%;
-    height: 100%;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    font-size: 40px;
     text-align: center;
-    line-height: 100px;
     background-color: #F5FBFB;
 }
 
 #cost_discount{
-    padding-top: 50px;
     background-color: #F5FBFB;
     border-top-left-radius: 20px;
-    padding-bottom: 30px;
+
 }
 
 input {
@@ -449,15 +631,11 @@ input {
 }
 
 #d_calculation, #d_reset {
-    width: 180px;
-    height: 50px;
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
     opacity: 0.8;
     box-shadow: 3px 3px 7px 3px rgb(192, 192, 192, 0.36);
-    font-size: 20px;
     background-color: white;
 }
 
@@ -470,13 +648,7 @@ input {
 /* 출력값 */
 #d_output {
     position: relative;
-    width: 50%;
-    height: 100%;
-    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    left: 50%;
-    bottom: 100%;
-    font-size: 25px;
     background-color: #E1EFF0 ;
 }
 
@@ -484,7 +656,6 @@ input {
     position: absolute;
     top: 15%;
     left: 15%;
-    line-height: 100px;
     background-color: #E1EFF0;
 }
 
@@ -495,6 +666,44 @@ span {
 /* ----------------------- */
 /* Lifespan.css  */
 /* ----------------------- */
+
+@media screen and (min-device-width: 1024px) {
+    #input > input {
+        width: 150px;
+        height: 20px;
+        font-size: 15px;
+    }
+    #graph {
+        width: 50%;
+        height: 50px;
+    }
+    #graph_res {
+        height: 50px;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    #input {
+        font-size: 13px;
+    }
+    #input > input {
+        font-size: 10px;
+    }
+    #lifespan {
+        width: 50px;
+    }
+    #birth {
+        width: 70px;
+        height: 10px;
+    }
+    #graph {
+        width: 80%;
+        height: 30px;
+    }
+    #graph_res {
+        height: 30px;
+    }
+}
 
 /* 입력값 */
 #input {
@@ -508,11 +717,8 @@ span {
 }
 
 #input > input {
-    width: 200px;
-    height: 30px;
     margin: 10px;
     margin-bottom: 25px;
-    font-size: 15px;
     background-color: white;
 }
 
@@ -546,8 +752,6 @@ span {
 
 #graph {
     position: relative;
-    width: 50%;
-    height: 50px;
     background-color: #E1EFF0;
     z-index: 0;
     border: 2px solid black;
@@ -559,7 +763,6 @@ span {
     position: absolute;
     background-color: lightcoral;
     width: 0%;
-    height: 50px;
     z-index: 1;
     border-radius: 10px;
 }
@@ -568,24 +771,92 @@ span {
     background-color: #F5FBFB;
 }
 
-.dp {
-    background-color: orange;
-}
-
 /* ----------------------- */
 /* Vat.css  */
 /* ----------------------- */
 
+@media screen and (min-device-width: 1024px) {
+    #total {
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        line-height: 70px;
+        font-size: 20px;
+    }
+    #supply {
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: 25px;
+        left: 50%;
+        bottom: 100%;
+        line-height: 70px;
+        font-size: 20px;
+
+    }
+    input {
+        width: 260px;
+        height: 20px;
+        font-size: 20px;
+    }
+    button {
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #explain1, #explain2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    #total {
+        width: 100%;
+        height: 210px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        line-height: 30px;
+    }
+    #supply {
+        width: 100%;
+        height: 210px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;   
+        line-height: 30px; 
+    }
+    input {
+        width: 160px;
+        height: 10px;
+        font-size: 13px;
+        padding: 5px;
+    }
+    button {
+        width: 60px;
+        height: 25px;
+        border-radius: 10px;
+        opacity: 0.8;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #explain1, #explain2 {
+        font-size: 20px;
+    }
+    #explain1 {
+        border-top-right-radius: 20px;
+    }
+}
+
 button {
-    width: 120px;
-    height: 40px;
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
     opacity: 0.8;
     box-shadow: 3px 3px 7px 3px rgb(192, 192, 192, 0.36);
-    font-size: 20px;
     background-color: white;
 }
 
@@ -596,9 +867,6 @@ button:hover {
 }
 
 input {
-    width: 260px;
-    height: 20px;
-    font-size: 20px;
     text-align: right;
     background-color: white;
 }
@@ -606,12 +874,6 @@ input {
 /* 입력값 */
 #total {
     position: relative;
-    width: 50%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    line-height: 70px;
-    font-size: 20px;
     background-color: #F5FBFB;
     text-align: center;
 }
@@ -620,22 +882,12 @@ input {
     border-top-left-radius: 20px;
     background-color: #F5FBFB;
     text-align: center;
-    font-size: 25px;
     padding: 20px;
 }
 
 /* 출력값 */
 #supply {
     position: relative;
-    width: 50%;
-    height: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-size: 25px;
-    left: 50%;
-    bottom: 100%;
-    line-height: 70px;
-    font-size: 20px;
     background-color: #E1EFF0;
     text-align: center;
 }
@@ -644,7 +896,6 @@ input {
     border-top-right-radius: 20px;
     background-color: #E1EFF0;
     text-align: center;
-    font-size: 25px;
     padding: 20px;
 }
 
@@ -652,13 +903,45 @@ input {
 /* Wordcounter.css  */
 /* ----------------------- */
 
+@media screen and (min-device-width: 1024px) {
+    textarea {
+        width: 60%;
+        height: 80%;
+        top: 40px;
+        left: 40px;
+    }
+    #word_ul {
+        width: 25%;
+        height: 80%;
+        top: 50px;
+        right: 40px;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1023px){
+    textarea {
+        width: 80%;
+        height: 60%;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #word_ul {
+        width: 80%;
+        left: 50%;
+        height: 20%;
+        bottom: 20px;
+        transform: translate(-50%);
+        background-color: red;
+    }
+    #word_ul > span {
+        background-color: red;
+    }
+}
+
 /* 유저 섹션 */
 textarea { 
     position: absolute;
-    width: 60%;
-    height: 80%;
-    top: 40px;
-    left: 40px;
     resize: none;
     border: 2px solid #507882;
     outline-color: #EDD7C8;
@@ -668,10 +951,6 @@ textarea {
 
 #word_ul {
     position: absolute;
-    width: 25%;
-    height: 80%;
-    top: 50px;
-    right: 40px;
     list-style-type: none;
     margin-top: 10px;
     line-height: 40px;

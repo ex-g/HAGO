@@ -56,7 +56,7 @@ export default function Bmi(){
     function reset(){
         $("#height").val("");
         $("#weight").val("");
-        $("#result").html("");
+        $("#b_result").html("");
         $("#bmi").html("");
         $("#stick").css("display", "none");
     }
