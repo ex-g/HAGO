@@ -29,7 +29,7 @@ export default function Home(){
             <div id="sec_name">
                 <h1>HAGO</h1>
                 <div id="name_desc">Have A Good One!<br/>
-                    Python 언어를 기반으로 한 웹 프레임워크인 Django를 이용한 토이프로젝트입니다.
+                    React를 이용한 토이프로젝트입니다.
                     HAGO에서 다양한 계산 기능을 경험해보세요!
                 </div>
             </div>
